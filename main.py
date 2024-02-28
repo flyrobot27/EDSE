@@ -48,3 +48,10 @@ for category in clubs_categories:
     with open(f"{category.replace(' ', '_')}.txt", "w") as f:
         for page_id in page_ids:
             f.write(f"{page_id}\n")
+
+for category in categories:
+    page_ids = get_category_page_ids(category)  # Adjust limit as needed
+    print(f"Fetched {len(page_ids)} page IDs for {category}")
+    with open(f"{category.replace(' ', '_')}.txt", "w") as f:
+        for page_id in page_ids:
+            f.write(f"{page_id}\n")
