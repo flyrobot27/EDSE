@@ -58,7 +58,7 @@ for wikitext in wiki_text_dir.rglob("*"):
 
 print("Hash index construction complete")
 
-player_id_folder = Path("player_ids/")
+player_id_folder = Path("wiki_ex_data/")
 
 output_dir = Path("output/")
 
