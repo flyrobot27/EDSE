@@ -40,6 +40,14 @@ def get_category_page_ids(category, cmtype="page"):
 
 # Example usage
 categories = ['La Liga players', 'Serie A players', 'Premier League players', 'Ligue 1 players', 'Bundesliga players']
+clubs_categories = ['La Liga clubs', 'Serie A clubs', 'Premier League clubs', 'Ligue 1 clubs', 'Bundesliga clubs']
+
+for category in clubs_categories:
+    page_ids = get_category_page_ids(category)  # Adjust limit as needed
+    print(f"Fetched {len(page_ids)} page IDs for {category}")
+    with open(f"{category.replace(' ', '_')}.txt", "w") as f:
+        for page_id in page_ids:
+            f.write(f"{page_id}\n")
 
 for category in categories:
     page_ids = get_category_page_ids(category)  # Adjust limit as needed
