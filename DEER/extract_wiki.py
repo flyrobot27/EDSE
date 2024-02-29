@@ -45,7 +45,7 @@ save_path = extract_wiki_path + 'wiki_sent_collect'
 
 wikipedia_entity_file = extract_wiki_path + 'wikipedia_entity.tsv'
 
-w2vec_dump_file = extract_wiki_path + 'enwiki_20180420_win10_100d.pkl.bz2'
+w2vec_dump_file = extract_wiki_path + 'enwiki_20180420_win10_500d.pkl.bz2'
 w2vec_keyword2idx_file = extract_wiki_path + 'w2vec_keyword2idx.pickle'
 
 entity_occur_from_cooccur_file = extract_wiki_path + 'entity_occur_from_cooccur.pickle'
