@@ -2,7 +2,7 @@ from pathlib import Path
 import os
 import re
 from sortedcontainers import SortedSet
-import pprint
+import html
 
 wiki_text_dir = Path("text/")
 
@@ -14,7 +14,7 @@ def process_wikitext(wikitext: Path) -> dict:
         for m in doc_pattern.finditer(file.read()):
             try:
                 doc_id = m.group(1).strip()
-                content_with_tag = m.group(0).strip()
+                content_with_tag = html.unescape(m.group(0).strip())
 
                 indexed_contents[doc_id] = content_with_tag
             except:
