@@ -1,0 +1,62 @@
+{
+    "1": {
+        "Club": 0,
+        "Player": 1,
+        "League": 0
+    },
+    "2": {
+        "Club": 1,
+        "Player": 0,
+        "League": 0
+    },
+    "3": {
+        "Club": 1,
+        "Player": 0,
+        "League": 0
+    },
+    "4": {
+        "Club": 0,
+        "Player": 0,
+        "League": 1
+    },
+    "5": {
+        "Club": 2,
+        "Player": 0,
+        "League": 0
+    },
+    "6": {
+        "Club": 3,
+        "Player": 0,
+        "League": 0
+    },
+    "7": {
+        "Club": 0,
+        "Player": 0,
+        "League": 1
+    },
+    "8": {
+        "Club": 1,
+        "Player": 1,
+        "League": 0
+    },
+    "9": {
+        "Club": 0,
+        "Player": 1,
+        "League": 0
+    },
+    "10": {
+        "Club": 2,
+        "Player": 0,
+        "League": 0
+    },
+    "11": {
+        "Club": 0,
+        "Player": 0,
+        "League": 2
+    },
+    "12": {
+        "Club": 4,
+        "Player": 0,
+        "League": 0
+    }
+}

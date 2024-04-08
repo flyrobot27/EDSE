@@ -1,0 +1,14 @@
+{
+    "1": "MATCH (p:Player {name: '<player_x>'})-[:PLAYED_FOR]->(c:Club) RETURN c.name",
+    "2": "MATCH (p:Player)-[:PLAYED_FOR]->(c:Club {name: '<club_y>'}) RETURN p.name",
+    "3": "MATCH (c:Club {name: '<club_z>'})-[:IS_IN]->(l:League) RETURN l.name",
+    "4": "MATCH (p:Player)-[:PLAYED_FOR]->(:Club)-[:IS_IN]->(l:League {name: '<league_a>'}) RETURN DISTINCT p.name",
+    "5": "MATCH (p:Player)-[:PLAYED_FOR]->(c1:Club {name: '<club_x>'}) MATCH (p)-[:PLAYED_FOR]->(c2:Club {name: '<club_y>'}) RETURN p.name",
+    "6": "MATCH (p:Player)-[:PLAYED_FOR]->(c:Club) WHERE c.name IN ['<club_x>', '<club_y>', '<club_z>'] RETURN p.name",
+    "7": "MATCH (p:Player)-[:PLAYED_FOR]->(c:Club)-[:IS_IN]->(l:League {name: '<league_a>'}) RETURN p.name, COUNT(c) AS clubs_count ORDER BY clubs_count DESC LIMIT 1",
+    "8": "MATCH (p1:Player {name: '<player_x>'})-[:PLAYED_FOR]->(c:Club {name: '<club_y>'}) MATCH (p2:Player)-[:PLAYED_FOR]->(c) WHERE p1 <> p2 RETURN p2.name",
+    "9": "MATCH (p1:Player {name: '<player_x>'})-[:PLAYED_FOR]->(c:Club) MATCH (p2:Player)-[:PLAYED_FOR]->(c) WHERE p1 <> p2 RETURN p2.name",
+    "10": "MATCH (p:Player)-[:PLAYED_FOR]->(c1:Club {name: '<club_x>'}) MATCH (p)-[:PLAYED_FOR]->(c2:Club {name: '<club_y>'}) RETURN p.name",
+    "11": "MATCH (p:Player)-[:PLAYED_FOR]->(:Club)-[:IS_IN]->(l:League) WHERE l.name IN ['<league_x>', '<league_y>'] RETURN p.name",
+    "12": "MATCH (p:Player)-[:PLAYED_FOR]->(c1:Club), (p)-[:PLAYED_FOR]->(c2:Club), (p)-[:PLAYED_FOR]->(c3:Club), (p)-[:PLAYED_FOR]->(c4:Club) WHERE c1.name =~'<club_a>' AND c2.name =~ '<club_x>' AND c3.name =~ '<club_y>' AND c4.name =~ '<club_z>' RETURN DISTINCT p.name"
+}
