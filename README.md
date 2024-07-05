@@ -1,5 +1,5 @@
 # EDSE: Entity Descriptive Search Engine
-This repository is for hosting the code required to complete our project: EDSE: Entity Descriptive Search Engine On Eurpoean Football. We have included the full paper at our repository.
+This repository is for hosting the code required to complete our project: EDSE: Entity Descriptive Search Engine On Eurpoean Football. We have included the [full paper](https://github.com/flyrobot27/EDSE/blob/master/EDSE__Entity_Descriptive_Search_Engine__Final_Report.pdf) at our repository.
 
 ## Repository Structure
 All codes are written in Python and Jupyter Notebook. All dependencies are listed under `requirements.txt`.\
