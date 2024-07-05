@@ -22,7 +22,7 @@ This folder contains the code we have used to both generate training data for [T
 - `evaluate_t5.ipynb` is used for evaluating the performance of the fine tuned T5 model using both the BLEU score and Gestalt pattern score
 
 ### Templates
-This folder contains the templates used by the `cypher_generator_trf.py` and `augment_data.py`:\
+This folder contains the templates used by the `cypher_generator_trf.py` and `augment_data.py`:
 - `sentence_template.json` specifies the type of sentence we are expecting for a given type of question
 - `cypher_template.json` specifies the corresponding Cypher query for a given sentence template
 - `entity_count.json` specifies the number of entities stated in each template
